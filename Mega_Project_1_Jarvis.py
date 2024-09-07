@@ -18,7 +18,7 @@ def talk_old(words):
 def talk(words):
     tts = gTTS(words)
     tts.save('temp.mp3')
-    # Initialize Pygame Mixer
+    # Initialize Pygame Mixer to play audio
     pygame.mixer.init()
 
     # Load your MP3 file
